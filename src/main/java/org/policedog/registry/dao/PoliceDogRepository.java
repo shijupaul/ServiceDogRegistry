@@ -19,7 +19,7 @@ public interface PoliceDogRepository extends JpaRepository<PoliceDog, Long> {
             "AND (:breed IS NULL OR d.breed LIKE %:breed%) " +
             "AND (:supplierCode IS NULL OR d.supplier.code LIKE %:supplierCode%)" +
             "AND d.deleted = false")
-    Page<PoliceDog> findDogs(@Param("name") String name, @Param("breed") String breed, @Param("supplierCode") String supplierName, Pageable pageable);
+    Page<PoliceDog> findDogs(@Param("name") String name, @Param("breed") String breed, @Param("supplierCode") String supplierCode, Pageable pageable);
 
     boolean existsByBadgeNumber(String badgeNumber);
 
