@@ -25,7 +25,7 @@ mvn spring-boot:run
 
 ### Accessing Swagger UI
 
-![Swagger UI](http://localhost:8080/swagger-ui/index.html)
+[Swagger UI](http://localhost:8080/swagger-ui/index.html)
 
 ### Tech Stack
 
